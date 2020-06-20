@@ -43,7 +43,6 @@ import {
   MovieOverview,
   MovieDetails,
 } from './style';
-import { ItemTitle } from '../../components/ItemCard/style';
 
 function Movie({ match, history }) {
   const [loading, setLoading] = useState(true); // loading state
