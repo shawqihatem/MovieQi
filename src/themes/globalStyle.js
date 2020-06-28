@@ -12,23 +12,23 @@ const GlobalStyle = createGlobalStyle`
     html {
         font-size: 53%;
 
-        ${props => props.theme.mediaQueries.sm} {font-size: 56%}
-        ${props => props.theme.mediaQueries.md} {font-size: 59%}
-        ${props => props.theme.mediaQueries.xl} {font-size: 62.5%}
+        ${(props) => props.theme.mediaQueries.sm} {font-size: 56%}
+        ${(props) => props.theme.mediaQueries.md} {font-size: 59%}
+        ${(props) => props.theme.mediaQueries.xl} {font-size: 62.5%}
     }
 
     body {
         /* Colors */
-        --primary-color: ${props => props.theme.colors.primary};
-        --background-color: ${props => props.theme.colors.background};
-        --secondary-background-color: ${props =>
+        --primary-color: ${(props) => props.theme.colors.primary};
+        --background-color: ${(props) => props.theme.colors.background};
+        --secondary-background-color: ${(props) =>
           props.theme.colors.secondaryBackground};
-        --text-color: ${props => props.theme.colors.text};
-        --white-color: ${props => props.theme.colors.white};
-        --black-color: ${props => props.theme.colors.black};
+        --text-color: ${(props) => props.theme.colors.text};
+        --white-color: ${(props) => props.theme.colors.white};
+        --black-color: ${(props) => props.theme.colors.black};
         
         /* Shadows */
-        --box-shadow: ${props => props.theme.shadows.primary};
+        --box-shadow: ${(props) => props.theme.shadows.primary};
         
         /* Fonts */
         --font-size: 1.6rem;
@@ -59,7 +59,7 @@ const GlobalStyle = createGlobalStyle`
     }
 
     ::selection {
-        background: var(--primary-color);
+        background: var(--secondary-background-color);
         color: var(--white-color);
     }
 `;

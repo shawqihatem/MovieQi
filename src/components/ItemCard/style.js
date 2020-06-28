@@ -26,13 +26,16 @@ const StyledItemCard = styled.div`
     background: linear-gradient(transparent, var(--primary-color));
     transition: all 0.3s ease;
 
-    ${props => props.theme.mediaQueries.noHover} {
-      background: linear-gradient(transparent, #012a2a);
+    ${(props) => props.theme.mediaQueries.noHover} {
+      background: linear-gradient(
+        transparent,
+        var(--secondary-background-color)
+      );
       opacity: 1;
     }
   }
 
-  ${props => props.theme.mediaQueries.noHover} {
+  ${(props) => props.theme.mediaQueries.noHover} {
     padding: 0;
   }
 
@@ -65,7 +68,7 @@ const StyledItemCard = styled.div`
 const ItemImage = styled.img`
   width: 100%;
   height: 100%;
-  object-fit: ${props => (props.contain ? 'contain' : 'cover')};
+  object-fit: ${(props) => (props.contain ? 'contain' : 'cover')};
   border-radius: 1rem;
   background: var(--secondary-background-color);
   transition: all 0.5s ease-in-out;
@@ -86,7 +89,7 @@ const ItemDetail = styled.div`
   padding: 0 2rem;
   color: #ffffff;
 
-  ${props => props.theme.mediaQueries.noHover} {
+  ${(props) => props.theme.mediaQueries.noHover} {
     bottom: 3rem;
     transform: translateY(0) translateX(-50%);
     opacity: 1;
