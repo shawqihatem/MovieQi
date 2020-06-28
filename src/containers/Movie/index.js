@@ -109,7 +109,7 @@ function Movie({ match, history }) {
   } else {
     return (
       <>
-        <Helmet title={`${item.title.toUpperCase()} | MovieQi`} />
+        <Helmet title={`${item.title.toUpperCase()} | MoviesQi`} />
         <MovieWrapper>
           <Container>
             <MovieHeader>

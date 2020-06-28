@@ -68,7 +68,7 @@ const Discover = ({ match, history }) => {
   } else {
     return (
       <React.Fragment>
-        <Helmet title={`${discoverTitle.toUpperCase()} | MovieQi`} />
+        <Helmet title={`${discoverTitle.toUpperCase()} | MoviesQi`} />
         <ItemsList type={itemsType} items={items} title={discoverTitle} />
         <Pagination
           totalPage={totalPages}

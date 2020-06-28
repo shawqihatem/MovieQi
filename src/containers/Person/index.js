@@ -80,7 +80,7 @@ const Person = ({ match, history }) => {
     return (
       <>
         <Helmet
-          title={`${person.name ? person.name.toUpperCase() : ''} | MovieQi`}
+          title={`${person.name ? person.name.toUpperCase() : ''} | MoviesQi`}
         />
         <PersonWrapper>
           <Container>
