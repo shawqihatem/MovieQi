@@ -7,7 +7,7 @@ import {
   faPlay,
   faFireAlt,
   faBars,
-  faTimes
+  faTimes,
 } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHeart } from '@fortawesome/free-regular-svg-icons';
@@ -26,7 +26,7 @@ import {
   NavbarItem,
   NavbarLink,
   MobileNavOverlay,
-  SidebarToggler
+  SidebarToggler,
 } from './style';
 
 const Sidebar = ({ opened }) => {
@@ -49,7 +49,7 @@ const Sidebar = ({ opened }) => {
             onClick={() => setIsOpened(false)}
             isOpened={isOpened}
           />
-          <MobileNavLogo>MovieQi</MobileNavLogo>
+          <MobileNavLogo>MoviesQi</MobileNavLogo>
           <MobileNavMenu>
             <MenuToggler onClick={() => setIsOpened(true)}>
               <FontAwesomeIcon icon={faBars} />
@@ -73,7 +73,7 @@ const Sidebar = ({ opened }) => {
                 }}
                 activeStyle={{
                   background: 'var(--primary-color)',
-                  color: 'var(--white-color)'
+                  color: 'var(--white-color)',
                 }}
               >
                 <FontAwesomeIcon icon={faHeart} />
@@ -88,7 +88,7 @@ const Sidebar = ({ opened }) => {
                 }}
                 activeStyle={{
                   background: 'var(--primary-color)',
-                  color: 'var(--white-color)'
+                  color: 'var(--white-color)',
                 }}
               >
                 <FontAwesomeIcon icon={faChartArea} />
@@ -103,7 +103,7 @@ const Sidebar = ({ opened }) => {
                 }}
                 activeStyle={{
                   background: 'var(--primary-color)',
-                  color: 'var(--white-color)'
+                  color: 'var(--white-color)',
                 }}
               >
                 <FontAwesomeIcon icon={faFireAlt} />
@@ -118,7 +118,7 @@ const Sidebar = ({ opened }) => {
                 }}
                 activeStyle={{
                   background: 'var(--primary-color)',
-                  color: 'var(--white-color)'
+                  color: 'var(--white-color)',
                 }}
               >
                 <FontAwesomeIcon icon={faPlay} />
@@ -134,7 +134,7 @@ const Sidebar = ({ opened }) => {
                 }}
                 activeStyle={{
                   background: 'var(--primary-color)',
-                  color: 'var(--white-color)'
+                  color: 'var(--white-color)',
                 }}
               >
                 <FontAwesomeIcon icon={faFire} />
