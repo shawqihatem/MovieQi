@@ -62,7 +62,7 @@ const Sidebar = ({ opened }) => {
           <FontAwesomeIcon icon={faTimes} />
         </SidebarToggler>
         <NavbarWrapper>
-          <NavbarLogo>MovieQi</NavbarLogo>
+          <NavbarLogo>MoviesQi</NavbarLogo>
           <NavbarMenu>
             <NavbarHeading>Movies</NavbarHeading>
             <NavbarItem>
