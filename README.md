@@ -2,7 +2,7 @@
 
 MovieQi is a Movies Library which has a lot of features like Search for Movies, Watching the Trailers, Seeing the Casts and many many features. Built with React.
 
-## [Watch NOW!](https://movieqi.shawqihatem.com)
+## [Watch NOW!](https://moviesqi.shawqihatem.com)
 
 ![Website Image](./public/image.png)
 
