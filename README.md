@@ -1,6 +1,6 @@
-# MovieQi
+# MoviesQi
 
-MovieQi is a Movies Library which has a lot of features like Search for Movies, Watching the Trailers, Seeing the Casts and many many features. Built with React.
+MoviesQi is a Movies Library which has a lot of features like Search for Movies, Watching the Trailers, Seeing the Casts and many many features. Built with React.
 
 ## [Watch NOW!](https://moviesqi.shawqihatem.com)
 
@@ -12,7 +12,7 @@ MovieQi is a Movies Library which has a lot of features like Search for Movies, 
 - React Router
 - Styled Components
 
-### Author: [Shawqi Hatem](github.com/ShawqiHatem)
+### Author: [Shawqi Hatem](https://github.com/ShawqiHatem)
 
 ### Social Networks
 
