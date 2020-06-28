@@ -1,13 +1,13 @@
 export default {
   colors: {
-    primary: '#048D8D',
-    primaryDark: '#05897F',
-    primaryLight: '#98D9D3',
+    primary: '#FF6363',
+    primaryDark: '#FF6363',
+    primaryLight: '#FF6363',
     background: '#ffffff',
     secondaryBackground: '#f5f5f5',
     text: '#707070',
     white: '#ffffff',
-    black: '#0C0C0C',
+    black: '#232B3F',
   },
   shadows: {
     primary: '0 0.5rem 1rem rgba(24, 24, 24, 0.2)',

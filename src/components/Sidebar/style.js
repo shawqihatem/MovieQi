@@ -10,7 +10,7 @@ const MobileNav = styled.div`
   padding: 0 4rem;
   background: var(--primary-color);
 
-  ${props => props.theme.mediaQueries.lg} {
+  ${(props) => props.theme.mediaQueries.lg} {
     display: none;
   }
 `;
@@ -23,11 +23,13 @@ const MobileNavContainer = styled.div`
   justify-content: space-between;
 `;
 
-const MobileNavLogo = styled.h3`
-  color: var(--white-color);
-  font-size: 2.8rem;
-  text-align: center;
-  font-weight: 700;
+const MobileNavLogo = styled.div`
+  svg {
+    fill: var(--white-color);
+    height: 100%;
+  }
+
+  height: 3rem;
   transition: all 0.3s ease;
 `;
 
@@ -36,7 +38,7 @@ const MobileNavMenu = styled.div`
   justify-content: space-between;
   align-items: center;
 
-  ${props => props.theme.mediaQueries.lg} {
+  ${(props) => props.theme.mediaQueries.lg} {
     margin-bottom: 0;
   }
 `;
@@ -62,11 +64,11 @@ const MobileNavOverlay = styled.div`
   z-index: 9;
   background: rgba(24, 24, 24, 0.3);
   display: inline-block;
-  opacity: ${props => (props.isOpened ? '1' : '0')};
-  pointer-events: ${props => (props.isOpened ? 'initial' : 'none')};
+  opacity: ${(props) => (props.isOpened ? '1' : '0')};
+  pointer-events: ${(props) => (props.isOpened ? 'initial' : 'none')};
   transition: all 0.5s ease;
 
-  ${props => props.theme.mediaQueries.lg} {
+  ${(props) => props.theme.mediaQueries.lg} {
     display: none;
   }
 `;
@@ -85,11 +87,11 @@ const StyledSidebar = styled.div`
   top: 0;
   left: 0;
   z-index: 9;
-  transform: ${props =>
+  transform: ${(props) =>
     props.isOpened ? 'translateX(0)' : 'translateX(-100%)'};
   transition: all 0.8s ease;
 
-  ${props => props.theme.mediaQueries.lg} {
+  ${(props) => props.theme.mediaQueries.lg} {
     flex: 0 0 22.5rem;
     width: initial;
     position: initial;
@@ -126,18 +128,32 @@ const SidebarToggler = styled.button`
   cursor: pointer;
   transition: all 0.3s ease;
 
-  ${props => props.theme.mediaQueries.lg} {
+  ${(props) => props.theme.mediaQueries.lg} {
     display: none;
   }
 `;
 
-const NavbarLogo = styled.h3`
-  font-size: 2.8rem;
-  font-weight: 700;
-  text-align: center;
-  color: var(--black-color);
+const NavbarLogo = styled.div`
+  height: 3rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 8rem;
-  transition: all 0.3s ease;
+
+  svg {
+    height: 100%;
+    width: 100%;
+    transition: all 0.3s ease;
+
+    .cls-1 {
+      fill: var(--black-color);
+    }
+
+    .cls-2 {
+      fill: var(--primary-color);
+    }
+  }
 `;
 
 const NavbarMenu = styled.ul`
@@ -206,5 +222,5 @@ export {
   NavbarMenu,
   NavbarHeading,
   NavbarItem,
-  NavbarLink
+  NavbarLink,
 };
