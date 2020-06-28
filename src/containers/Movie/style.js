@@ -18,7 +18,7 @@ const MovieHeader = styled.header`
 
   flex-direction: column;
 
-  ${props => props.theme.mediaQueries.lg} {
+  ${(props) => props.theme.mediaQueries.lg} {
     flex-direction: row;
   }
 `;
@@ -33,7 +33,7 @@ const MovieImage = styled.div`
   box-shadow: var(--box-shadow);
   overflow: hidden;
 
-  ${props => props.theme.mediaQueries.lg} {
+  ${(props) => props.theme.mediaQueries.lg} {
     margin-right: 5rem;
     margin-bottom: 0;
   }
@@ -67,7 +67,7 @@ const MovieTagline = styled.h4`
   font-size: 1.6rem;
   font-weight: 600;
   text-transform: uppercase;
-  color: var(--black-color);
+  color: var(--white-color);
   margin-bottom: 2rem;
 `;
 
@@ -115,7 +115,7 @@ const MovieContent = styled.div`
   justify-content: space-between;
   margin-bottom: 8rem;
 
-  ${props => props.theme.mediaQueries.lg} {
+  ${(props) => props.theme.mediaQueries.lg} {
     flex-direction: row;
   }
 `;
@@ -126,7 +126,7 @@ const MovieLongDetails = styled.div`
   border-radius: 1rem;
   padding: 0;
 
-  ${props => props.theme.mediaQueries.lg} {
+  ${(props) => props.theme.mediaQueries.lg} {
     margin-right: 3rem;
     margin-bottom: 0;
   }
@@ -145,7 +145,7 @@ const MovieHeading = styled.h3`
   margin-bottom: 2rem;
   display: flex;
   flex-direction: column;
-  color: var(--black-color);
+  color: var(--white-color);
   align-items: flex-start;
 
   &::after {
@@ -204,7 +204,7 @@ const MovieDetails = styled.div`
 `;
 
 const MovieDetail = styled.div`
-  color: var(--black-color);
+  color: var(--white-color);
   font-weight: 400;
   display: flex;
 
@@ -236,5 +236,5 @@ export {
   MovieGenres,
   MovieGenre,
   MovieOverview,
-  MovieDetails
+  MovieDetails,
 };

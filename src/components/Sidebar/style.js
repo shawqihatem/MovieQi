@@ -147,7 +147,7 @@ const NavbarLogo = styled.div`
     transition: all 0.3s ease;
 
     .cls-1 {
-      fill: var(--black-color);
+      fill: var(--white-color);
     }
 
     .cls-2 {
@@ -171,7 +171,7 @@ const NavbarHeading = styled.h3`
   padding: 0 3rem;
   margin-bottom: 2rem;
   border-left: 5px solid transparent;
-  color: var(--black-color);
+  fill: var(--white-color);
   display: flex;
   align-items: center;
 
@@ -204,7 +204,7 @@ const NavbarLink = styled(NavLink)`
   }
 
   &:hover {
-    color: var(--black-color);
+    fill: var(--primary-color);
   }
 `;
 

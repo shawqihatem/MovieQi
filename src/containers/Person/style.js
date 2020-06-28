@@ -18,7 +18,7 @@ const PersonHeader = styled.header`
 
   flex-direction: column;
 
-  ${props => props.theme.mediaQueries.lg} {
+  ${(props) => props.theme.mediaQueries.lg} {
     flex-direction: row;
   }
 `;
@@ -42,7 +42,7 @@ const PersonImage = styled.div`
   box-shadow: var(--box-shadow);
   overflow: hidden;
 
-  ${props => props.theme.mediaQueries.lg} {
+  ${(props) => props.theme.mediaQueries.lg} {
     margin-right: 5rem;
     margin-bottom: 0;
   }
@@ -102,7 +102,7 @@ const PersonContent = styled.div`
   justify-content: space-between;
   margin-bottom: 8rem;
 
-  ${props => props.theme.mediaQueries.lg} {
+  ${(props) => props.theme.mediaQueries.lg} {
     flex-direction: row;
   }
 `;
@@ -120,7 +120,7 @@ const PersonHeading = styled.h3`
   margin-bottom: 2rem;
   display: flex;
   flex-direction: column;
-  color: var(--black-color);
+  color: var(--white-color);
   align-items: flex-start;
 
   &::after {
@@ -198,8 +198,8 @@ const PersonImageSlider = styled.div`
 `;
 
 const PersonImageWrapper = styled.div`
-  transform: translateX(-${props => props.translate}rem);
-  width: ${props => props.width}px;
+  transform: translateX(-${(props) => props.translate}rem);
+  width: ${(props) => props.width}px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -235,5 +235,5 @@ export {
   PersonBiography,
   PersonImageSlider,
   PersonImageWrapper,
-  Image
+  Image,
 };

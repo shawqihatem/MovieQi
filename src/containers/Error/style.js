@@ -25,7 +25,7 @@ const ErrorMessage = styled.h3`
   font-weight: 600;
   text-transform: capitalize;
   text-align: center;
-  color: var(--black-color);
+  color: var(--white-color);
   margin-bottom: 2rem;
 `;
 

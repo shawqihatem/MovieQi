@@ -6,7 +6,7 @@ const Title = styled.h2`
   text-align: left;
   text-transform: capitalize;
   margin-bottom: 3rem;
-  color: var(--black-color);
+  color: var(--white-color);
 `;
 
 export { Title };
